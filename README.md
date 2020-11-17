@@ -5,17 +5,7 @@
 [![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability/uxxman/tomo-plugin-cron)](https://codeclimate.com/github/uxxman/tomo-plugin-cron)
 [![Gem](https://img.shields.io/gem/v/tomo-plugin-cron)](https://rubygems.org/gems/tomo-plugin-cron)
 
-This is a [tomo](https://github.com/mattbrictson/tomo) plugin that ... TODO: Description of this plugin goes here.
-
----
-
-- [Installation](#installation)
-- [Settings](#settings)
-- [Tasks](#tasks)
-- [Support](#support)
-- [License](#license)
-- [Code of conduct](#code-of-conduct)
-- [Contribution guide](#contribution-guide)
+This is a [tomo](https://github.com/mattbrictson/tomo) plugin that provides tasks for managing cron jobs using ruby DSL provided by the awesome [whenever](https://github.com/javan/whenever) gem.
 
 ## Installation
 
@@ -37,21 +27,43 @@ Then add the following to `.tomo/config.rb`:
 plugin "cron"
 ```
 
+Now, create a file **schedule.rb** alongside your tomo config file and start writing cron jobs in ruby.
+
+```ruby
+# .tomo/schedule.rb
+
+every 3.hours do
+  rake "my:rake:task"
+  runner "MyModel.some_process"
+  command "/usr/bin/my_great_command"
+end
+
+every 1.day, at: '4:30 am' do
+  runner "MyModel.task_to_run_at_four_thirty_in_the_morning"
+end
+```
+For more examples, checkout out [whenever](https://github.com/javan/whenever#example-schedulerb-file) gem readme.
+
+
 ## Settings
 
-TODO: document plugin settings
-
-| Name                  | Purpose | Default |
-| --------------------- | ------- | ------- |
-| `cron_setting` | TODO    | `nil`   |
+| Name                  | Required | Purpose | Default |
+| --------------------- | -------- | ------- | ------- |
+| `cron_schedule_path`  | No       | Schedule file location | `.tomo/schedule.rb`   |
 
 ## Tasks
 
-TODO: document plugin tasks
+### cron:show
 
-### cron:task_name
+Print out current content of crontab.
 
-TODO
+### cron:install
+
+Translate schedules defined inside your **schedule.rb** file into cron syntax and write them to your host's crontab.
+
+### cron:uninstall
+
+Delete host's crontab.
 
 ## Support
 
