@@ -7,9 +7,7 @@ module Tomo
     module Cron
       extend Tomo::PluginDSL
 
-      # TODO: initialize this plugin's settings with default values
-      # defaults cron_setting: "foo",
-      #          cron_another_setting: "bar"
+      defaults cron_schedule_path: ".tomo/schedule.rb"
 
       tasks Tomo::Plugin::Cron::Tasks
     end
