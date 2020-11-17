@@ -1,7 +1,7 @@
 module Tomo::Plugin::Cron
   class Tasks < Tomo::TaskLibrary
-    def hello
-      remote.run "echo", "hello, world"
+    def show
+      remote.run "crontab -l", raise_on_error: false
     end
   end
 end

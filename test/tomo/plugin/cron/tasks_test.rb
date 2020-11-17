@@ -5,8 +5,9 @@ class Tomo::Plugin::Cron::TasksTest < Minitest::Test
     @tester = Tomo::Testing::MockPluginTester.new("cron")
   end
 
-  def test_hello
-    @tester.run_task("cron:hello")
-    assert_equal('echo hello,\ world', @tester.executed_script)
+  def test_show
+    @tester.run_task("cron:show")
+
+    assert_equal("crontab -l", @tester.executed_script)
   end
 end
