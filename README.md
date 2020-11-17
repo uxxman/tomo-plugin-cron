@@ -1,32 +1,9 @@
-# tomo plugin template
+# tomo-plugin-cron
 
-This is a GitHub template for creating [tomo](https://github.com/mattbrictson/tomo) plugins, which are packaged as Ruby gems.
-
-Read the tomo tutorial [Publishing a Plugin](https://tomo-deploy.com/tutorials/publishing-a-plugin/) to get started. Then press [**Use this template**](https://github.com/mattbrictson/tomo-plugin/generate) to generate a project from this template. In the generated project, run this script to rename the gem to meet your needs:
-
-```
-$ ruby rename_template.rb
-```
-
-This template is based on `bundle gem` with some notable improvements:
-
-- Travis CI _and_ Circle CI configuration
-- Minitest, with minitest-reporters for nicely formatted test output
-- Rubocop with a good set of configuration
-- [release-drafter](https://github.com/apps/release-drafter) GitHub Action for automating release notes
-- A `rake bump` task to keep your Ruby and Bundler dependencies up to date
-- A nice README with badges ready to go (see below)
-
----
-
-<!-- END FRONT MATTER -->
-
-# tomo-plugin-example
-
-[![Gem Version](https://badge.fury.io/rb/replace_with_gem_name.svg)](https://rubygems.org/gems/replace_with_gem_name)
-[![Travis](https://img.shields.io/travis/com/mattbrictson/tomo-plugin.svg?label=travis)](https://travis-ci.com/github/mattbrictson/tomo-plugin)
-[![Circle](https://circleci.com/gh/mattbrictson/tomo-plugin/tree/main.svg?style=shield)](https://app.circleci.com/pipelines/github/mattbrictson/tomo-plugin?branch=main)
-[![Code Climate](https://codeclimate.com/github/mattbrictson/tomo-plugin/badges/gpa.svg)](https://codeclimate.com/github/mattbrictson/tomo-plugin)
+[![Gem Version](https://badge.fury.io/rb/tomo-plugin-cron.svg)](https://rubygems.org/gems/tomo-plugin-cron)
+[![Travis](https://img.shields.io/travis/com/uxxman/tomo-plugin-cron.svg?label=travis)](https://travis-ci.com/github/uxxman/tomo-plugin-cron)
+[![Circle](https://circleci.com/gh/uxxman/tomo-plugin-cron/tree/main.svg?style=shield)](https://app.circleci.com/pipelines/github/uxxman/tomo-plugin-cron?branch=main)
+[![Code Climate](https://codeclimate.com/github/uxxman/tomo-plugin-cron/badges/gpa.svg)](https://codeclimate.com/github/uxxman/tomo-plugin-cron)
 
 This is a [tomo](https://github.com/mattbrictson/tomo) plugin that ... TODO: Description of this plugin goes here.
 
@@ -45,19 +22,19 @@ This is a [tomo](https://github.com/mattbrictson/tomo) plugin that ... TODO: Des
 Run:
 
 ```
-$ gem install tomo-plugin-example
+$ gem install tomo-plugin-cron
 ```
 
 Or add it to your Gemfile:
 
 ```ruby
-gem "tomo-plugin-example"
+gem "tomo-plugin-cron"
 ```
 
 Then add the following to `.tomo/config.rb`:
 
 ```ruby
-plugin "example"
+plugin "cron"
 ```
 
 ## Settings
@@ -66,19 +43,19 @@ TODO: document plugin settings
 
 | Name                  | Purpose | Default |
 | --------------------- | ------- | ------- |
-| `plugin_name_setting` | TODO    | `nil`   |
+| `cron_setting` | TODO    | `nil`   |
 
 ## Tasks
 
 TODO: document plugin tasks
 
-### example:task_name
+### cron:task_name
 
 TODO
 
 ## Support
 
-If you want to report a bug, or have ideas, feedback or questions about the gem, [let me know via GitHub issues](https://github.com/mattbrictson/tomo-plugin/issues/new) and I will do my best to provide a helpful answer. Happy hacking!
+If you want to report a bug, or have ideas, feedback or questions about the gem, [let me know via GitHub issues](https://github.com/uxxman/tomo-plugin-cron/issues/new) and I will do my best to provide a helpful answer. Happy hacking!
 
 ## License
 
