@@ -1,9 +1,9 @@
 # tomo-plugin-cron
 
-[![Gem Version](https://badge.fury.io/rb/tomo-plugin-cron.svg)](https://rubygems.org/gems/tomo-plugin-cron)
-[![Travis](https://img.shields.io/travis/com/uxxman/tomo-plugin-cron.svg?label=travis)](https://travis-ci.com/github/uxxman/tomo-plugin-cron)
-[![Circle](https://circleci.com/gh/uxxman/tomo-plugin-cron/tree/main.svg?style=shield)](https://app.circleci.com/pipelines/github/uxxman/tomo-plugin-cron?branch=main)
-[![Code Climate](https://codeclimate.com/github/uxxman/tomo-plugin-cron/badges/gpa.svg)](https://codeclimate.com/github/uxxman/tomo-plugin-cron)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/uxxman/tomo-plugin-cron/CI)](https://github.com/uxxman/tomo-plugin-cron/actions?query=workflow%3ACI)
+[![Code Climate coverage](https://img.shields.io/codeclimate/coverage/uxxman/tomo-plugin-cron)](https://codeclimate.com/github/uxxman/tomo-plugin-cron)
+[![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability/uxxman/tomo-plugin-cron)](https://codeclimate.com/github/uxxman/tomo-plugin-cron)
+[![Gem](https://img.shields.io/gem/v/tomo-plugin-cron)](https://rubygems.org/gems/tomo-plugin-cron)
 
 This is a [tomo](https://github.com/mattbrictson/tomo) plugin that ... TODO: Description of this plugin goes here.
 
