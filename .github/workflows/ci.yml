@@ -30,6 +30,6 @@ jobs:
         run: bundle exec rake rubocop 
 
       - name: Code Climate
-        uses: paambaati/codeclimate-action@v2.7.4
+        uses: paambaati/codeclimate-action@v2.7.5
         env:
           CC_TEST_REPORTER_ID: f9ddafd36fac28b6c1607dcdc69113ca29892806f8872d49d125684e57774b13
